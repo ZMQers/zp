@@ -1,0 +1,23 @@
+<project
+    name = "zp"
+    description = "ZeroMQ Pipes"
+    script = "zproject.gsl"
+    email = "zeromq-dev@lists.zeromq.org"
+    repository = "https://github.com/ZMQers/zp"
+    url = "https://github.com/ZMQers/zp"
+    license = "MPL-2.0"
+    >
+
+    <include filename = "src/license.xml" />
+
+    <version major = "1" minor = "0" />
+    <abi current = "1" revision = "0" age = "0" />
+
+    <use project = "czmq" />
+
+    <class name = "zp_proto" state = "stable">ZeroMQ Pipes protocol</class>
+    <actor name = "zpasync" state = "stable" private = "1">Asynchronous job execution actor</actor>
+
+    <model name = "zp_proto" />
+
+</project>
